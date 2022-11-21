@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #22313f;
+}
+
+header {
+    background-color: #34495e;
+    text-align: center;
+}
+
+h3 {
+    color: #e4f1fe;
+    text-align: center;
+}
+
+header > h1 {
+    color: #e4f1fe;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.actions {
+    background-color: #34495e;
+    width: 25%;
+    margin: 2em auto 2em;
+    padding: 10px;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions > button, #component-selector {
+    padding: 8px;
+    border-radius: 1em;
+    border: none;
+}
+
+
+.component-container {
+    background-color: #34495e;
+    border-radius: 0.5em;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.component-container > form > label {
+    color: #e4f1fe;
+}
+
+.component-container > form > button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.sub-container{
+    background-color: #34495e;
+    border-radius: 0.5em;
+    width: 50%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.submitButton {
+    border-radius: 0.5em;
+    padding: 8px;
+    border-radius: 1em;
+    border: none;
+}
+
+.resetButton {
+    margin-top: 15px;
+    border-radius: 0.5em;
+    padding: 8px;
+    border-radius: 1em;
+    border: none;
+}
+
+.component-id-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;    
+}
+
+.component-id-container > button {
+    border-radius: 100%;
+    padding: 5px;
+}
+
+button > img {
+    width: 25px;
+    height: 25px;
+}
+
+
+#add-container, #modify-container, #delete-container {
+    display: none;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icons8-pc-building-simulator-64.png" type="image/x-icon">
+    <title>Arma tu PC (Administrador)</title>
+</head>
+<body>
+    <header>
+        <h1>ARMA TU PC: ADMINISTRADOR</h1>
+    </header>
+
+    <main class="main-container">
+
+        <div class="actions">
+            <button id="add">Añadir</button>
+            <button id="modify">Modificar</button>
+            <button id="delete">Eliminar</button>
+        </div>
+
+        <div class="component-container">
+            <form> <!--Para ver que componente se modificara-->
+                <input type="radio" name="component" id="component-CPU" value="CPU">
+                <label for="component-CPU">CPU</label>
+                <input type="radio" name="component" id="component-POWER_SUPPLY" value="POWER SUPPLY">
+                <label for="component-POWER_SUPPLY">Fuente de Poder</label>
+                <input type="radio" name="component" id="component-STORAGE_UNIT" value="STORAGE UNIT">
+                <label for="component-STORAGE_UNIT">Almacenamiento</label>
+                <input type="radio" name="component" id="component-MOTHERBOARD" value="MOTHERBOARD">
+                <label for="component-MOTHERBOARD">Placa Base</label>
+                <input type="radio" name="component" id="component-REFRIGERATION_SYSTEM" value="REFRIGERATION SYSTEM">
+                <label for="component-REFRIGERATION_SYSTEM">Refrigeracion</label>
+                <input type="radio" name="component" id="component-RAM" value="RAM">
+                <label for="component-RAM">RAM</label>
+                <input type="radio" name="component" id="component-GPU" value="GPU">
+                <label for="component-GPU">Tarjeta Grafica</label>
+                <button type="submit" id="component-selector">Seleccionar</button>
+            </form>
+        </div>
+
+        <div class="sub-container" id="add-container">
+            <h3 id="add-component-title"></h3>
+            <form class="flex">
+                <input type="text" placeholder="Modelo..." id="add-Model">
+                <input type="text" placeholder="Marca..." id="add-Brand">
+                <input type="text" placeholder="Socket..." id="add-Socket">
+                <input type="text" placeholder="Nucleos..." id="add-Cores">
+                <input type="text" placeholder="Hilos..." id="add-Threads">
+                <input type="text" placeholder="Certificacion..." id="add-Certification">
+                <input type="text" placeholder="Capacidad de Watts..." id="add-WattCapacity">
+                <input type="text" placeholder="Tecnologia de Almacenamiento..." id="add-StorageTecnology">
+                <input type="text" placeholder="Capacidad de GB..." id="add-GbCapacity">
+                <input type="text" placeholder="Tasa de Transferencia (Mb por segundo)..." id="add-MbTransferRate">
+                <input type="text" placeholder="Tipo Placa Base..." id="add-MotherboardType">
+                <input type="text" placeholder="Num Puertos RAM..." id="add-RamSlots">
+                <input type="text" placeholder="Num Puertos Almacenamiento..." id="add-ExpansionSlots">
+                <input type="text" placeholder="Tipo Refrigeracion..." id="add-RefrigerationType">
+                <input type="text" placeholder="Tecnologia DDR..." id="add-Ddr">
+                <input type="text" placeholder="Velocidad Mhz..." id="add-MhzVelocity">
+                <input type="text" placeholder="Memoria VRAM..." id="add-GbVram">
+                <input type="text" placeholder="Teconologia GDDR..." id="add-Gddr">
+                <input type="text" placeholder="Interfaz..." id="add-Interface">
+                <input type="text" placeholder="Precio..." id="add-Price">
+                <input type="text" placeholder="URL Imagen..." id="add-ImageURL">
+                <button type="submit" class="submitButton" id="add-SubmitButton">Añadir</button>
+                <button type="reset" class="resetButton">Vaciar</button>
+            </form>
+        </div>
+
+        <div class="sub-container" id="modify-container">
+            <h3 id="Modify-component-title"></h3>
+            <form class="flex">
+                <div class="component-id-container">
+                    <input type="text" placeholder="Id de Componente..." id="modify-component-id" required>
+                    <button type="submit" id="modify-search-data">
+                        <img src="assets/search-icon.png" alt="icono_buscar">
+                    </button>
+                </div>
+                <input type="text" placeholder="Modelo..." id="modify-Model">
+                <input type="text" placeholder="Marca..." id="modify-Brand">
+                <input type="text" placeholder="Socket..." id="modify-Socket">
+                <input type="text" placeholder="Nucleos..." id="modify-Cores">
+                <input type="text" placeholder="Hilos..." id="modify-Threads">
+                <input type="text" placeholder="Certificacion..." id="modify-Certification">
+                <input type="text" placeholder="Capacidad de Watts..." id="modify-WattCapacity">
+                <input type="text" placeholder="Tecnologia de Almacenamiento..." id="modify-StorageTecnology">
+                <input type="text" placeholder="Capacidad de GB..." id="modify-GbCapacity">
+                <input type="text" placeholder="Tasa de Transferencia (Mb por segundo)..." id="modify-MbTransferRate">
+                <input type="text" placeholder="Tipo Placa Base..." id="modify-MotherboardType">
+                <input type="text" placeholder="Num Puertos RAM..." id="modify-RamSlots">
+                <input type="text" placeholder="Num Puertos Almacenamiento..." id="modify-ExpansionSlots">
+                <input type="text" placeholder="Tipo Refrigeracion..." id="modify-RefrigerationType">
+                <input type="text" placeholder="Tecnologia DDR..." id="modify-Ddr">
+                <input type="text" placeholder="Velocidad Mhz..." id="modify-MhzVelocity">
+                <input type="text" placeholder="Memoria VRAM..." id="modify-GbVram">
+                <input type="text" placeholder="Teconologia GDDR..." id="modify-Gddr">
+                <input type="text" placeholder="Interfaz..." id="modify-Interface">
+                <input type="text" placeholder="Precio..." id="modify-Price">
+                <input type="text" placeholder="URL Imagen..." id="modify-ImageURL">
+                <button type="submit" class="submitButton" id="modify-SubmitButton">Modificar</button>
+                <button type="reset" class="resetButton">Vaciar</button>
+            </form>
+        </div>
+
+        <div class="sub-container" id="delete-container">
+            <h3 id="delete-component-title"></h3>
+            <form id="delete-CPU" class="flex">
+                <input type="text" placeholder="Id de Componente..." id="delete-component-id" required>
+                <button type="submit" class="submitButton" id="delete-SubmitButton">Eliminar</button>
+            </form>
+        </div>
+
+    </main>
+    <script src="scripts/FormManager.js " type="module"></script>
+</body>
+</html>
