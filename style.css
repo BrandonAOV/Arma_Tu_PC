@@ -124,6 +124,9 @@ button > img {
     height: 25px;
 }
 
+button:hover {
+    opacity: 0.7;
+}
 
 #add-container, #modify-container, #delete-container {
     display: none;
