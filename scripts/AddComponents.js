@@ -189,6 +189,7 @@ export function addCPUComponent() {
     fetch(url+query)
         .then((res) => res.text())
         .then((res) => {
+            console.log(res);
             if(res == 1){
                 alert('Componente añadido exitosamente');
             } else {
@@ -321,7 +322,7 @@ export function addGPUComponent() {
     const priceVal = addPrice.value;
     const ImageURLVal = addImageURL.value;
     const url = 'https://projectatp.000webhostapp.com/DBInsert/InsertGPU.php';
-    const query = `?model=${modelVal}&brand=${brandVal}&gb_vram=${gbVramVal}&gddr=${gddrVal}&mhz_velocity=${mhzVelocityVal}&interface=${interfaceVal}&price=${priceVal}&imageURL=${ImageURLVal}`;
+    const query = `?model=${modelVal}&brand=${brandVal}&gb_vram=${gbVramVal}&gddr=${gddrVal}&mhz_velocity=${mhzVelocityVal}&interface=${interfaceVal}&price=${priceVal}&imageURL=${ImageURLVal}`
 
     fetch(url+query)
         .then((res) => res.text())

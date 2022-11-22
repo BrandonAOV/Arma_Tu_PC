@@ -256,7 +256,7 @@ modifySearchDataButton.addEventListener('click', (e) => {
 
 deleteSubmitButton.addEventListener('click', (e) => {
     e.preventDefault();
-    deleteComponents();
+    deleteComponents(component);
 })
 
 
